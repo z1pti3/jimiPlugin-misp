@@ -1,0 +1,447 @@
+{
+   "name": "misp",
+   "author": "",
+   "version": 0.0,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "mispGetEvent": {
+         "display_name": "mispGetEvent",
+         "className": "_mispGetEvent",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiBaseUrl",
+               "schema_value": "apiBaseUrl",
+               "type": "input",
+               "label": "apiBaseUrl",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "certValidation",
+               "schema_value": "certValidation",
+               "type": "input",
+               "label": "certValidation",
+               "description": ""
+            },
+            {
+               "schema_item": "caCertFile",
+               "schema_value": "caCertFile",
+               "type": "input",
+               "label": "caCertFile",
+               "description": ""
+            },
+            {
+               "schema_item": "event_id",
+               "schema_value": "event_id",
+               "type": "input",
+               "label": "event_id",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mispAddEvent": {
+         "display_name": "mispAddEvent",
+         "className": "_mispAddEvent",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiBaseUrl",
+               "schema_value": "apiBaseUrl",
+               "type": "input",
+               "label": "apiBaseUrl",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "certValidation",
+               "schema_value": "certValidation",
+               "type": "input",
+               "label": "certValidation",
+               "description": ""
+            },
+            {
+               "schema_item": "caCertFile",
+               "schema_value": "caCertFile",
+               "type": "input",
+               "label": "caCertFile",
+               "description": ""
+            },
+            {
+               "schema_item": "event_data",
+               "schema_value": "event_data",
+               "type": "json-input",
+               "label": "event_data",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mispAddAttribute": {
+         "display_name": "mispAddAttribute",
+         "className": "_mispAddAttribute",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiBaseUrl",
+               "schema_value": "apiBaseUrl",
+               "type": "input",
+               "label": "apiBaseUrl",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "certValidation",
+               "schema_value": "certValidation",
+               "type": "input",
+               "label": "certValidation",
+               "description": ""
+            },
+            {
+               "schema_item": "caCertFile",
+               "schema_value": "caCertFile",
+               "type": "input",
+               "label": "caCertFile",
+               "description": ""
+            },
+            {
+               "schema_item": "event_id",
+               "schema_value": "event_id",
+               "type": "input",
+               "label": "event_id",
+               "description": ""
+            },
+            {
+               "schema_item": "attribute_data",
+               "schema_value": "attribute_data",
+               "type": "json-input",
+               "label": "attribute_data",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mispAddAttributeValue": {
+         "display_name": "mispAddAttributeValue",
+         "className": "_mispAddAttributeValue",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiBaseUrl",
+               "schema_value": "apiBaseUrl",
+               "type": "input",
+               "label": "apiBaseUrl",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "certValidation",
+               "schema_value": "certValidation",
+               "type": "input",
+               "label": "certValidation",
+               "description": ""
+            },
+            {
+               "schema_item": "caCertFile",
+               "schema_value": "caCertFile",
+               "type": "input",
+               "label": "caCertFile",
+               "description": ""
+            },
+            {
+               "schema_item": "event_id",
+               "schema_value": "event_id",
+               "type": "input",
+               "label": "event_id",
+               "description": ""
+            },
+            {
+               "schema_item": "attribute_value",
+               "schema_value": "attribute_value",
+               "type": "input",
+               "label": "attribute_value",
+               "description": ""
+            },
+            {
+               "schema_item": "attribute_type",
+               "schema_value": "attribute_type",
+               "type": "input",
+               "label": "attribute_type",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mispSearchAttribute": {
+         "display_name": "mispSearchAttribute",
+         "className": "_mispSearchAttribute",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiBaseUrl",
+               "schema_value": "apiBaseUrl",
+               "type": "input",
+               "label": "apiBaseUrl",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "certValidation",
+               "schema_value": "certValidation",
+               "type": "input",
+               "label": "certValidation",
+               "description": ""
+            },
+            {
+               "schema_item": "caCertFile",
+               "schema_value": "caCertFile",
+               "type": "input",
+               "label": "caCertFile",
+               "description": ""
+            },
+            {
+               "schema_item": "attribute_data",
+               "schema_value": "attribute_data",
+               "type": "json-input",
+               "label": "attribute_data",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "mispSearchAttributeValue": {
+         "display_name": "mispSearchAttributeValue",
+         "className": "_mispSearchAttributeValue",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiBaseUrl",
+               "schema_value": "apiBaseUrl",
+               "type": "input",
+               "label": "apiBaseUrl",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "certValidation",
+               "schema_value": "certValidation",
+               "type": "input",
+               "label": "certValidation",
+               "description": ""
+            },
+            {
+               "schema_item": "caCertFile",
+               "schema_value": "caCertFile",
+               "type": "input",
+               "label": "caCertFile",
+               "description": ""
+            },
+            {
+               "schema_item": "attribute_value",
+               "schema_value": "attribute_value",
+               "type": "input",
+               "label": "attribute_value",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
